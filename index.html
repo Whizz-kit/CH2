@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Demo & Dining</title>
+    
+    <!-- Fonts: Figtree -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Figtree', 'sans-serif'],
+            },
+            colors: {
+              primary: '#1819FF', // Electric Blue
+              secondary: '#F8F8F8', // Soft Off-White
+              surface: '#FFFFFF', // Pure White
+              subtle: '#6B7280', // Gray-500
+              dark: '#1A1A1A', // Deep Dark Grey (Not Black)
+              border: '#E5E7EB', // Gray-200
+            },
+            boxShadow: {
+              'soft': '0 8px 30px -4px rgba(0, 0, 0, 0.05)',
+              'deep': '0 20px 40px -12px rgba(0, 0, 0, 0.12)', // Deep soft shadow for cards
+              'glow': '0 0 25px rgba(24, 25, 255, 0.4)', // Electric blue glow
+            },
+            borderRadius: {
+              '4xl': '2.5rem',
+              '5xl': '3rem',
+            },
+            spacing: {
+              'safe': 'env(safe-area-inset-top)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #F8F8F8;
+        color: #1A1A1A;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overscroll-behavior-y: none;
+      }
+      
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      /* Hide touch highlights on mobile */
+      * {
+        -webkit-tap-highlight-color: transparent;
+      }
+      
+      /* Glass effect utility */
+      .glass {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.10.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.25",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react-dom": "https://aistudiocdn.com/react-dom@^19.2.1",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
